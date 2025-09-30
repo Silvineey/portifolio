@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Aboutme.CSS">
+    <link rel="shortcut icon" href="./img/Bonequinho.png" type="image/x-icon">
+</head>
+<body>
+    <header class="caixas">
+        <div class="caixa">
+                <img src="./img/steam.png" alt="icone da steam">
+            <nav>
+                <ol class="nav">
+                    <li><a href="index.html">Voltar ao Inicio</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main class="principal">
+        <div class="divisoes">
+            <h2>Calculadora comum</h2>
+            <label>Digite 2 valores</label><br>
+            <input type="text" id="div1" name="entrada" placeholder="Digite um numero">
+            <input type="text" id="div2" name="entrada" placeholder="Digite outro numero">
+            <p id="saidacalculadora"></p>
+            <div>
+                <button onclick="Somar()">Somar</button>
+                <button onclick="Dividir()">Dividir</button>
+                <button onclick="Subtrair()">Subtrair</button>
+                <button onclick="Multiplicar()">Multiplicar</button>
+            </div>
+        </div>
+        <div class="divisoes" id="IMC">
+            <h2>Calculadora pro IMC e inserção de elemento</h2>
+            <button onclick="começar()">Começar</button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

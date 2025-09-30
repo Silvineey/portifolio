@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.caixas{
+    background-color: #007d9a;
+    width: 100%;
+}
+.caixa{
+    padding: 1em;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+}
+.caixa img{
+    cursor: pointer;
+    width: 3em;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.caixa img:hover{
+    transform: scale(1.5);
+}
+.nav{
+    margin-top: 15px;
+    display: flex;
+    gap: 3em;
+}
+.nav li a{
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+    color: white;
+}
+.nav li a:hover{
+    background-color: black;
+}
+.nav li{
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.nav li:hover{
+    transform: scale(1.5);
+}
+.principal{
+    display: flex;
+    justify-content: center;
+}
+.divisoes{
+    justify-items: center;
+    padding: 3em;
+    border: black solid 5px;
+}
+label{
+    font-size: 20px;
+}
