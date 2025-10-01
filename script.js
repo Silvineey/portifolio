@@ -87,7 +87,7 @@ function começar(){
     onde.appendChild(saida)
     function enviar(){
         let imc1=document.getElementById("entrada1")
-        let imc2=document.getElementById("entrada2")
+        let imc2=document.getElementById("entrada2").value
         let num1=Number(imc1.value)/100
         let num2=Number(imc2.value)
         if (imc2.value===""||imc1.value===""){
@@ -109,5 +109,15 @@ function clear(){
 }
 
 function pop(){
-    window.open("index.html","popup",width=200,height=300,top=100,left=200)
+    window.open("index.html","popup",width=200,height=300)
+}
+
+function tabuada(){
+    let entrada=document.getElementById("entrada").value
+    let resultado="A tabuada do "+entrada+" fica: "
+    for(let i=0;i<=10;i++){
+        let calculo=entrada*i 
+        resultado+=calculo+","
+    }
+    document.getElementById("saida").textContent=resultado
 }
