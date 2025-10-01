@@ -81,6 +81,10 @@ function começar(){
     limpar.textContent="Limpar"
     onde.appendChild(limpar)
     limpar.onclick=clear
+    let saida=document.createElement("h2")
+    saida.id="saida"
+    saida.innerHTML=""
+    onde.appendChild(saida)
     function enviar(){
         let imc1=document.getElementById("entrada1")
         let imc2=document.getElementById("entrada2")
@@ -96,14 +100,14 @@ function começar(){
         }
         else{
             let imc=num2/(num1*num1)
-            let saida=document.createElement("h2")
-            saida.id="saida"
             saida.textContent="Seu IMC é de: "+imc
-            onde.appendChild(saida)
         }
     }
-    function clear(){
-        let saida=document.querySelectorAll("saida")
-        saida.textContent=""
-    }
+}
+function clear(){
+    saida.innerHTML=""
+}
+
+function pop(){
+    window.open("index.html","popup",width=200,height=300,top=100,left=200)
 }
