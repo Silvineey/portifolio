@@ -18,7 +18,8 @@
             </nav>
         </div>
     </header>
-    <main class="principal">
+    
+    <div class="principal">
         <div class="divisoes">
             <h2>Calculadora comum</h2>
             <label>Digite 2 valores</label><br>
@@ -32,21 +33,46 @@
                 <button onclick="Multiplicar()">Multiplicar</button>
             </div>
         </div>
+
         <div class="divisoes" id="IMC">
             <h2>Calculadora pro IMC e inserção de elemento</h2>
             <button onclick="começar()">Começar</button>
         </div>
+
         <div class="divisoes">
             <h2>pop-up</h2>
             <button onclick="pop()">Enviar</button>
+        </div>
+        <div class="divisoes" id="tabuada">
+            <h3>Digite algum numero</h3>
+            <input id="entrada" placeholder="Digite um numero aqui" type="text">
+            <button onclick="tabuada()">Enviar</button>
+            <p id="saida"></p>
+        </div>
     </div>
-    <div class="divisoes" id="tabuada">
-        <h3>Digite algum numero</h3>
-        <input placeholder="Digite algum numero" id="entrada" type="text">
-        <button onclick="tabuada()">Enviar</button>
-        <p id="saida"></p>
+
+
+    <div class="principal">
+        <div class="divisoes">
+            <h2>Digite alguma coisa aperte enter</h2>
+            <input id="input" type="text" placeholder="Digite algum numero">
+            <p id="saidarobo"></p>
+        </div>
+        <div class="divisoes" id="corborda">
+            <h2>escolha uma cor</h2>
+            <form id="cor">
+            <input onclick="cores()" id="vermelho" value="1" type="radio" name="cor">
+            <label>Vermelho</label><br>
+            <input onclick="cores()" id="azul" value="2" type="radio" name="cor">
+            <label>azul</label><br>
+            <input onclick="cores()" id="amarelo" value="3" type="radio" name="cor">
+            <label>amarelo</label>
+
+            </form>
+
+
+        </div>
     </div>
-    </main>
     <script src="script.js"></script>
 </body>
 </html>

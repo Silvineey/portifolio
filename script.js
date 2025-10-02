@@ -121,3 +121,11 @@ function tabuada(){
     }
     document.getElementById("saida").textContent=resultado
 }
+
+let input=document.getElementById("input")
+input.addEventListener("keydown", function(event){
+    if(event.key==="Enter"){
+        document.getElementById("saidarobo").textContent="Vc digitou "+input.value
+    }
+})
+
