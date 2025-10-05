@@ -129,3 +129,6 @@ input.addEventListener("keydown", function(event){
     }
 })
 
+function cores(){
+    let selecao=document.querySelector("input[name="cor"]);
+}
