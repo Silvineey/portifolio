@@ -18,14 +18,18 @@ function Subtrair(){
         window.alert("Preencha todos os campos alma sebosa")
         document.getElementById("saidacalculadora").innerHTML=""
     }
-    let entrada1=document.getElementById("div1")
-    let entrada2=document.getElementById("div2")
-    let num1=Number(entrada1.value) 
-    let num2=Number(entrada2.value)
-    let sub=num1-num2
-    document.getElementById("saidacalculadora").innerHTML="O resultado da subtração de "+num1+" menos "+num2+" É igual a "+sub
-    entrada1.value=""
-    entrada2.value=""
+    else{
+        let entrada1=document.getElementById("div1")
+        let entrada2=document.getElementById("div2")
+        let num1=Number(entrada1.value) 
+        let num2=Number(entrada2.value)
+        let sub=num1-num2
+        document.getElementById("saidacalculadora").innerHTML="O resultado da subtração de "+num1+" menos "+num2+" É igual a "+sub
+        entrada1.value=""
+        entrada2.value=""
+
+    }
+
 }
 function Dividir(){
     if (div1.value==""||div2.value==""){
@@ -128,7 +132,3 @@ input.addEventListener("keydown", function(event){
         document.getElementById("saidarobo").textContent="Vc digitou "+input.value
     }
 })
-
-function cores(){
-    let selecao=document.querySelector("input[name="cor"]);
-}
