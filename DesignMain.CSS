@@ -64,9 +64,7 @@ main{
 .main img{
     transition:all 0.4s cubic-bezier(.68,-0.55,.27,1.55);
     justify-content: center;
-    margin-top: 150px;
-    margin-left: 50px;
-    border-radius: 25px;
+    border-radius: 100px;
 }
 .main img:hover{
     cursor:pointer;
@@ -87,4 +85,7 @@ main{
 .forte:hover{
     color: white;
     cursor: pointer;
+}
+.coluna{
+    padding: 1em;
 }

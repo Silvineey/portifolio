@@ -29,7 +29,6 @@ function Subtrair(){
         entrada2.value=""
 
     }
-
 }
 function Dividir(){
     if (div1.value==""||div2.value==""){
