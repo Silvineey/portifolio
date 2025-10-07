@@ -1,91 +1,98 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    ---corPrimaria:#3f7373;
+    ---corTexto:#000000;
+    ---CorBranca:#BABDBF
 }
 body{
-    background-color: #007d9a;
     width: 100%;
 }
-.principal img{
-    transition: all 0.5s ease;
-    width: 3.5em;
-}
-.principal img:hover{
-    transform: scale(1.5);
-}
-header{
+.header{
     width: 100%;
-    border-radius: 1px;
-    background-color:  #007d9a ;
-}
-.barrinha{
+    background-color: var(---corPrimaria);
+    padding-top: 0.5em;
+    justify-content: space-evenly;
     display: flex;
-    justify-content: center;
 }
-.nav li a{
-    font-size: 1.2em;
-    border-radius: 5px;
+.header img{
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    color: black;
-    text-decoration: none;
+    width: 3em;
 }
-.footer a:hover{
-    color: white;
+.header img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
-a{
-    text-decoration: none;
-}
-.nav{
+
+.menubar{
+    gap: 1em;
     display: flex;
-    list-style-type: none;
-    gap: 15px;
-    margin-top: 15px;
-
 }
-.barrinha img:hover{
-    cursor: pointer;
-}
-
-.nav li a:hover{
-    border-color: red;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: rgb(1, 2, 0);
+.menubar a{
     color: white;
-    box-shadow: 1px 1px 5px black;
+
+}
+.menubar li{
+    font-size: 17px;
+    padding-top: 0.5em;
+}
+.menubar li{
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+.menubar li:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
 }
 main{
-    display: flex;
-    width: 100%;
-    background-color: #454545;
-    justify-content: center;
+    background-color: var(---CorBranca);
 }
-.main img{
-    transition:all 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+.menugames{
+    width: 100%;
+    display: flex;
+}
+h1{
+    text-align: center;
+}
+.caixa{
+    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 2em;
+    width: 100%;
+    gap: 2em;
+    display: flex;
+}
+.caixa img{
+    width: 20em;
+    display: flex;
     border-radius: 100px;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.main img:hover{
-    cursor:pointer;
+.caixa img:hover{
+    box-shadow: 2px 2px 10px yellow;
     transform: scale(1.1);
-    box-shadow: 1px 1px 10px yellow;
-}
-.footer{
-    display: flex;
-    justify-content:center;
-    background-color: #007d9a;
-    width: 100%;
-}
-.footer p{
-    margin: 2em;
-    margin-top: 55px;
-    font-size: 20px;
-}
-.forte:hover{
-    color: white;
     cursor: pointer;
 }
-.coluna{
-    padding: 1em;
+.prtExpedicao33{
+    padding: 2em;
+    display: none;
+    justify-content: center;
+}
+.prtexp33{
+    justify-content: center;
+    max-width: 90%;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.prtexp33 img{
+    border-radius: 100px;
+    width: 20em;
 }
