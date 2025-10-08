@@ -1,0 +1,47 @@
+function abrirgaleria33(){
+    esconder()
+    const menu=document.getElementById("galeriaexp33")
+    menu.style.display="flex"
+}
+function galeriatlou(){
+    esconder()
+    const menu=document.getElementById("galeriatlou")
+    menu.style.display="flex"
+}
+function sky(){
+    esconder()
+    const menu=document.getElementById("galeriasky")
+    menu.style.display="flex"
+}
+
+function galerianaruto(){
+    esconder()
+    const menu=document.getElementById("galerianaruto")
+    menu.style.display="flex"
+}
+function galeriajedi(){
+    esconder()
+    const menu=document.getElementById("galeriajedi")
+    menu.style.display="flex"
+}
+function uncharted(){
+    esconder()
+    const menu=document.getElementById("galeriaunc")
+    menu.style.display="flex"
+}
+function poter(){
+    esconder()
+    const menu=document.getElementById("poter")
+    menu.style.display="flex"
+}
+function miranha(){
+    esconder()
+    const menu=document.getElementById("miranha")
+    menu.style.display="flex"
+}
+function esconder(){
+    const galeria=document.querySelectorAll(".galeria")
+    galeria.forEach(galerias=>{
+        galerias.style.display="none"
+    })
+}
