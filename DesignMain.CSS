@@ -4,6 +4,7 @@
     box-sizing: border;
     text-decoration: none;
     list-style: none;
+    color: black;
 }
 :root{
     ---corPrimaria:#3f7373;
@@ -93,13 +94,49 @@ h1{
     flex-wrap: wrap;
 }
 .prt img{
-    width: 35em;
+    width: 25em;
     border-radius: 20em;
 }
 button{
     cursor: pointer;
 }
+fotter p{
+    font-size: 15px;
+}
 footer{
-    width: 100%;
-    background-color: var(---CorBranca);
+    font-size: 20px;
+    padding-top:2em ;
+    padding-bottom:10%;
+    max-width: 100%;
+    background-color: var(---corPrimaria);
+    text-align: center;
+}
+.oculto label{
+    font-size: 20px;
+}
+footer img{
+    border-radius: 25px;
+}
+.oculto{
+    opacity: 0;
+    text-align: center;
+    transition: all 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+    visibility: hidden;
+}
+footer img{
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+footer img:hover{
+    transform:scale(1.05);
+}
+.oculto.mostrar{
+    opacity:1;
+    visibility:visible;
+}
+strong a{
+    color: white;
+}
+strong:hover{
+    cursor: pointer;
 }

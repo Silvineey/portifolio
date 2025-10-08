@@ -45,3 +45,12 @@ function esconder(){
         galerias.style.display="none"
     })
 }
+
+function aparecer(){
+    const oculto=document.getElementById("oculto")
+    oculto.classList.add("mostrar")
+}
+function sumir(){
+    const oculto=document.getElementById("oculto")
+    oculto.classList.remove("mostrar")
+}
