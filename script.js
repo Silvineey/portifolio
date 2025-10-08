@@ -54,3 +54,16 @@ function sumir(){
     const oculto=document.getElementById("oculto")
     oculto.classList.remove("mostrar")
 }
+
+/// Aqui é a pagina de jogos
+const imagens=document.querySelectorAll("img[data-id]")
+imagens.forEach(img=>{
+    const id=img.getAttribute("data-id")
+    const descricao=document.getElementById(id)
+    img.addEventListener("mouseover",()=>{
+        descricao.classList.add("mostrar")
+    })
+    img.addEventListener("mouseout",()=>{
+        descricao.classList.remove("mostrar")
+    })
+})
