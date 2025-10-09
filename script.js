@@ -55,17 +55,4 @@ function sumir(){
     oculto.classList.remove("mostrar")
 }
 
-/// Aqui é a pagina de jogos
-function aparecerjogos(){
-    const jogos=document.querySelector(".joguinhos")
-    jogos.classList.add("jogos")
-}
-
-function ocultarmain(){
-    esconder()
-    aparecerjogos()
-    const main=document.getElementById(".menugames")
-    main.forEach(mains=>{
-        mains.classList.add("ocultarmain")
-    })
-}
+/// Aqui é a pagina de jogo e anime

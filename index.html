@@ -14,15 +14,9 @@
         <a href="https://steamcommunity.com/profiles/76561198393657289/" target="_blank"><img src="img/steam.png" alt="logo da steam"></a>
         <nav class="barra">
             <ol class="menubar">
-                <li><a href="index.html">menu</a></li>
-                <li><a onclick="ocultarmain()">jogos e animes</a></li>
+                <li><a href="#main">menu</a></li>
+                <li><a href="#joguinhos" >jogos e animes</a></li>
                 <li><a href="#">about me</a></li>
-                <li class="submenu"><a>Projetos</a>
-                    <ul>
-                        <li>Landing page</li>
-                        <li>Controle financeiro</li>
-                    </ul>
-                </li>
             </ol>
         </nav>
     </header>
@@ -157,24 +151,34 @@
             </div>
         </section>
     </main>
-
+    
     <section class="joguinhos" id="joguinhos"> <!-- Essa section vai mostrar os jogos -->
-        <div class="caixajogos">
-
-            <div data-id="cyberpunk" class="cyberpunk">
-                <img src="Aleatorio/cyberpunk.jpeg" alt="">
-            </div>
-                <div onmouseout="esconderanalise()" onmouseover="analise()" class="analise">
-                    <img src="Aleatorio/cyberpunktime.png" alt="">
-                    <p>Cyberpunk, após 130 horas de jogo e ter feito todos os finais <br>
-                        Cyberpunk é um jogo injustiçado. No lançamento sem duvidas foi um fracasso. <br>
-                        Mas Após  atualização 2.0 acredito que o jogo cumpriu pelo menos 10% do que prometeu <br>
-                        a historia é boa, gráficos bons e as modificações corporais deixam o jogo diferenciado. <br>
-                        Acredito que ainda tem muito o que melhorar, ainda tem diversos bugs, mas é divertido.
-                    </p>
+        <section class="caixaprincipal">
+            <div class="caixasecundaria">
+                <div class="analise">
+                    <img src="Aleatorio/cyberpunk.jpeg" alt="imagem do jogo cyberpunk">
                 </div>
-        </div>
-    </section>
+                <div class="oculto" id="cyberpunk">
+                    <img src="Aleatorio/cyberpunktime.png" alt="">
+                    <p>Cyberpunk</p>
+                </div>
+                
+            </div>
+            <div class="caixasecundaria">
+                <div class="analise">
+                    <img src="Aleatorio/20250309175735_1.jpg" alt="">
+                </div>
+                <div class="oculto">
+                    <p>Metal Gear revangence</p>
+                </div>
+            </div>
+            
+
+
+        </section>
+
+    </section> <!-- até aqui vai mostrar os joguinhos -->
+
     <footer>
         <h3>Site pra testar algumas coisas do HTML+CSS</h3>
         <h3>Tente clicar em alguma capa pra abrir as capturas de tela</h3>
