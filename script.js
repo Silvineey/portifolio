@@ -56,14 +56,16 @@ function sumir(){
 }
 
 /// Aqui é a pagina de jogos
-const imagens=document.querySelectorAll("img[data-id]")
-imagens.forEach(img=>{
-    const id=img.getAttribute("data-id")
-    const descricao=document.getElementById(id)
-    img.addEventListener("mouseover",()=>{
-        descricao.classList.add("mostrar")
+function aparecerjogos(){
+    const jogos=document.querySelector(".joguinhos")
+    jogos.classList.add("jogos")
+}
+
+function ocultarmain(){
+    esconder()
+    aparecerjogos()
+    const main=document.getElementById(".menugames")
+    main.forEach(mains=>{
+        mains.classList.add("ocultarmain")
     })
-    img.addEventListener("mouseout",()=>{
-        descricao.classList.remove("mostrar")
-    })
-})
+}

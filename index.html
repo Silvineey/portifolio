@@ -15,14 +15,19 @@
         <nav class="barra">
             <ol class="menubar">
                 <li><a href="index.html">menu</a></li>
-                <li><a href="games.html">jogos</a></li>
-                <li><a href="animes.html">animes</a></li>
-                <li><a href="AboutMe.html">about me</a></li>
+                <li><a onclick="ocultarmain()">jogos e animes</a></li>
+                <li><a href="#">about me</a></li>
+                <li class="submenu"><a>Projetos</a>
+                    <ul>
+                        <li>Landing page</li>
+                        <li>Controle financeiro</li>
+                    </ul>
+                </li>
             </ol>
         </nav>
     </header>
-    <main>
-        <section class="menugames">
+    <main> <!-- pagina principal -->
+        <section id="main" class="menugames">
             <div class="caixa">
                 <img onclick="abrirgaleria33()" src="img/expedição 33.jpg" alt="capa do jogo expedição 33">
                 <img onclick="galeriajedi()" src="img/jedi.jpg" alt="capa do jogo jedi survivor">
@@ -38,11 +43,6 @@
                 <img onclick="poter()" src="img/HarryPote.jpg" alt="capa do hogwarts legacy">
             </div>
 
-        </section>
-        <section class="scripts" id="scripts">
-            <div class="caixascript">
-
-            </div>
         </section>
         <section id="galeriaexp33" class="galeria">
             <div>
@@ -157,6 +157,24 @@
             </div>
         </section>
     </main>
+
+    <section class="joguinhos" id="joguinhos"> <!-- Essa section vai mostrar os jogos -->
+        <div class="caixajogos">
+
+            <div data-id="cyberpunk" class="cyberpunk">
+                <img src="Aleatorio/cyberpunk.jpeg" alt="">
+            </div>
+                <div onmouseout="esconderanalise()" onmouseover="analise()" class="analise">
+                    <img src="Aleatorio/cyberpunktime.png" alt="">
+                    <p>Cyberpunk, após 130 horas de jogo e ter feito todos os finais <br>
+                        Cyberpunk é um jogo injustiçado. No lançamento sem duvidas foi um fracasso. <br>
+                        Mas Após  atualização 2.0 acredito que o jogo cumpriu pelo menos 10% do que prometeu <br>
+                        a historia é boa, gráficos bons e as modificações corporais deixam o jogo diferenciado. <br>
+                        Acredito que ainda tem muito o que melhorar, ainda tem diversos bugs, mas é divertido.
+                    </p>
+                </div>
+        </div>
+    </section>
     <footer>
         <h3>Site pra testar algumas coisas do HTML+CSS</h3>
         <h3>Tente clicar em alguma capa pra abrir as capturas de tela</h3>
