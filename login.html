@@ -11,24 +11,39 @@
 
 <body>
     <div class="caixa">
-        <form action="">
+        <div>
             <div>
                 <h2>Entrar na plataforma</h2>
             </div>
             <div class="entrada">
-                <input required type="text" type="email" placeholder="Email">
+                <input id="entradaemail" required type="text" type="email" placeholder="Email">
             </div>
             <div class="entrada">
-                <input required type="text" type="password" placeholder="Senha">
+                <input id="entradasenha" required type="text" type="password" placeholder="Senha">
                 <p>esqueci minha senha</p>
             </div>
-            <div>
-                <button type="submit">entrar</button>
+            <div class="botao">
+                <button class="log" onclick="logar()" type="submit">entrar</button>
             </div>
             <div>
-                <h3>Não está cadastrado? <strong>Cadastrar</strong></h3>
+                <h3>Não está cadastrado? <strong onclick="cadastro()">Cadastrar</strong></h3>
             </div>
-        </form>
+        </div>
+    </div>
+
+    <div class="cadastro"> <!-- teste -->
+        <div>
+            <div>
+                <h2>Informe um email e uma senha</h2>
+            </div>
+            <div>
+                <input type="email" placeholder="Email">
+            </div>
+            <div>
+                <input type="password" placeholder="Senha">
+            </div>
+            <button class="cadastrar" type="submit">Cadastrar</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
