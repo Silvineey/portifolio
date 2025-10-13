@@ -91,3 +91,24 @@ function cadastro(){
     menu.style.display="none"
     cadastro.style.display="flex"
 }
+function cadastrar(){
+    let entradaemail=document.getElementById("cadastroemail")
+    let entradasenha=document.getElementById("cadastrosenha")
+    let valoremail=entradaemail.value
+    let valorsenha=entradasenha.value
+    if(entradasenha.value.length<=4){
+        window.alert("A senha precisa ser maior que 4 digitos")
+    }
+    validar.forEach(dominios=>{
+        if(entradaemail.value.toLowerCase().includes(dominios)){
+            valido=true
+        }
+        if(!valido){
+            window.alert("Email inválido")
+        }
+        else{
+            window.location.href="index.html"
+        }
+
+    })
+}
