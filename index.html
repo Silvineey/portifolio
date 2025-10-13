@@ -6,199 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Principal</title>
     <link rel="shortcut icon" href="./img/Bonequinho.png" type="image/x-icon">
-    <link rel="stylesheet" href="DesignMain.CSS">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header class="header">
-        <a href="https://steamcommunity.com/profiles/76561198393657289/" target="_blank"><img src="img/steam.png" alt="logo da steam"></a>
-        <nav class="barra">
-            <ol class="menubar">
-                <li><a href="#main">menu</a></li>
-                <li><a href="#joguinhos" >jogos e animes</a></li>
-                <li><a href="#">about me</a></li>
-            </ol>
-        </nav>
+    <header>
+        <h2>Syd</h2>
+        <div>
+            <nav>
+                <ol class="menubar">
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <img src="Aleatorio/icons8-sun-50 (1).png" alt="alterar para modo claro">
+                </ol>
+            </nav>
+        </div>
     </header>
-    <main> <!-- pagina principal -->
-        <section id="main" class="menugames">
-            <div class="caixa">
-                <img onclick="abrirgaleria33()" src="img/expedição 33.jpg" alt="capa do jogo expedição 33">
-                <img onclick="galeriajedi()" src="img/jedi.jpg" alt="capa do jogo jedi survivor">
-                <img onclick="galeriatlou()" src="img/the last of us 2.jpg" alt="capa do jogo the last of us 2 remastered">
-                <img onclick="galerianaruto()" src="img/narutinho.jpg" alt="capa do jogo naruto storm 4">
+    <main>
+        <section>
+            <div class="principal">
+                <h1>Olá meu nome é <strong class="nome">Sydney</strong></h1>
+                <h2>Estudante de desenvolvimento web</h2>
+                <p>Tenho 23 anos, faço faculdade de analise e desenvolvimento de sistemas. <br>
+                    Estudo web desenvolvimento a 4 meses, busco oportunidades na área de TI. <br>
+                    Tanto na área de infra quanto de desenvolvimento. <br>
+                    tenho como objetivo ser um desenvolvedor fullstack.
+                </p>
             </div>
         </section>
-        <section class="menugames">
-            <div class="caixa">
-                <img onclick="sky()" src="img/nomansky.jpg" alt="capa do jogo no mans sky">
-                <img onclick="uncharted()" src="img/uncharted.jpg" alt="capa do jogo uncharted">
-                <img onclick="miranha()" src="img/miranha.jpg" alt="capa do spider-man remastered">
-                <img onclick="poter()" src="img/HarryPote.jpg" alt="capa do hogwarts legacy">
-            </div>
-
-        </section>
-        <section id="galeriaexp33" class="galeria">
-            <div>
-                <button onclick="esconder()"><img src="img/icons8-arrowup-24.png" alt="setinha para cima"><BR></BR>Esconder</button>
-            </div>
-            <div class="prt">
-                <img src="EXP33/20250426124641_1.jpg" alt="">
-                <img src="EXP33/20250426134958_1.jpg" alt="">
-                <img src="EXP33/20250427152826_1.jpg" alt="">
-                <img src="EXP33/20250429062950_1.jpg" alt="">
-                <img src="EXP33/20250901125313_1.jpg" alt="">
-                <img src="EXP33/20250901122119_1.jpg" alt="">
-                <img src="EXP33/20250901113203_1.jpg" alt="">
-                <img src="EXP33/20250831132059_1.jpg" alt="">
-                <img src="EXP33/20250901111113_1.jpg" alt="">
-                <img src="EXP33/20250831131838_1.jpg" alt="">
-                <img src="EXP33/20250831122650_1.jpg" alt="">
-                <img src="EXP33/20250831113154_1.jpg" alt="">
-            </div>
-        </section>
-        <section id="galeriatlou" class="galeria">
-            <button onclick="esconder()"><img src="img/icons8-arrowup-24.png" alt=""><BR></BR>Esconder</button>
-            <div class="prt">
-                <img src="TheLastOfUs/1(10).jpg" alt="">
-                <img src="TheLastOfUs/1(11).jpg" alt="">
-                <img src="TheLastOfUs/1(12).jpg" alt="">
-                <img src="TheLastOfUs/1(13).jpg" alt="">
-                <img src="TheLastOfUs/1(14).jpg" alt="">
-                <img src="TheLastOfUs/1(16).jpg" alt="">
-                <img src="TheLastOfUs/1(2).jpg" alt="">
-                <img src="TheLastOfUs/1(22).jpg" alt="">
-                <img src="TheLastOfUs/1(20).jpg" alt="">
-            </div>
-        </section>
-        <section id="galeriasky" class="galeria">
-            <button onclick="esconder()"><img src="img/icons8-arrowup-24.png" alt=""><BR></BR>Esconder</button>
-            <div class="prt">
-                <img src="Aleatorio/sky.jpg" alt="">
-            </div>
-        </section>
-        <section id="galerianaruto" class="galeria">
-            <button onclick="esconder()"><img src="img/icons8-arrowup-24.png" alt=""><BR></BR>Esconder</button>
-            <div class="prt">
-                <img src="Aleatorio/naruto (10).jpg" alt="">
-                <img src="Aleatorio/naruto (9).jpg" alt="">
-                <img src="Aleatorio/naruto (8).jpg" alt="">
-                <img src="Aleatorio/naruto (7).jpg" alt="">
-                <img src="Aleatorio/naruto (6).jpg" alt="">
-                <img src="Aleatorio/naruto (5).jpg" alt="">
-                <img src="Aleatorio/naruto (4).jpg" alt="">
-                <img src="Aleatorio/naruto (3).jpg" alt="">
-                <img src="Aleatorio/naruto (2).jpg" alt="">
-                <img src="Aleatorio/naruto (1).jpg" alt="">
-                <img src="Aleatorio/naruto.jpg" alt="">
-            </div>
-        </section>
-            <section id="galeriajedi" class="galeria">
-                <button onclick="esconder()"><img src="img/icons8-arrowup-24.png" alt=""><BR></BR>Esconder</button>
-                <div class="prt">
-                    <img src="JEDI/20250207224235_1.jpg" alt="">
-                    <img src="JEDI/20250211065725_1.jpg" alt="">
-                    <img src="JEDI/20250211074856_1.jpg" alt="">
-                    <img src="JEDI/20250211223724_1.jpg" alt="">
-                    <img src="JEDI/20250213215523_1.jpg" alt="">
-                    <img src="JEDI/20250213215652_1.jpg" alt="">
-                    <img src="JEDI/20250213215652_1.jpg" alt="">
+        <section>
+            <div id="projetos" class="projetos">
+                <div class="caixa">
+                    <div><img src="Aleatorio/projeto1.png" alt=""></div>
+                    <h2>Limpeza de estofados</h2>
+                    <h3>O objetivo do site é um monstruario de serviços. <br>
+                        Um site bem simples, usando apenas HTML e CSS. <br>
+                        Visando aumentar a vibilidade da marca LS
+                    </h3>
+                    <div class="botao">
+                        <button>HTML</button>
+                        <button>CSS</button>
                     </div>
-                </section>
-            </section>
-        <section id="galeriaunc" class="galeria">
-            <button onclick="esconder()"><img src="img/icons8-arrowup-24.png" alt=""><BR></BR>Esconder</button>
-            <div class="prt">
-                <img src="Uncharted/20250630105852_1.jpg" alt="">
-                <img src="Uncharted/20250701081513_1.jpg" alt="">
-                <img src="Uncharted/20250630102015_1.jpg" alt="">
-                <img src="Uncharted/20250630105955_1.jpg" alt="">
-                <img src="Uncharted/20250630100507_1.jpg" alt="">
-                <img src="Uncharted/20250702074205_1.jpg" alt="">
-                <img src="Uncharted/20250630110038_1.jpg" alt="">
-                <img src="Uncharted/20250630102947_1.jpg" alt="">
-                <img src="Uncharted/20250630080910_1.jpg" alt="">
+                    <div class="links">
+                        <a target="_blank" href="https://silvineey.github.io/Limpeza-De-Estofados/"><img
+                                src="Aleatorio/icons8-link-50.png" alt=""></a>
+                        <a target="_blank" href="https://github.com/Silvineey"><img src="Aleatorio/icons8-github-50.png"
+                                alt=""></a>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="poter" class="galeria">
-            <button onclick="esconder()"><img src="img/icons8-arrowup-24.png" alt=""><BR></BR>Esconder</button>
-            <div class="prt">
-                <img src="Aleatorio/poter (2).jpg" alt="">
-                <img src="Aleatorio/poter (3).jpg" alt="">
-                <img src="Aleatorio/poter (4).jpg" alt="">
-                <img src="Aleatorio/poter (5).jpg" alt="">
-                <img src="Aleatorio/poter (6).jpg" alt="">
-                <img src="Aleatorio/poter (7).jpg" alt="">
-                <img src="Aleatorio/poter (8).jpg" alt="">
-                <img src="Aleatorio/poter (9).jpg" alt="">
-            </div>
-        </section>
-        <section id="miranha" class="galeria">
-            <button onclick="esconder()"><img src="img/icons8-arrowup-24.png" alt=""><BR></BR>Esconder</button>
-            <div class="prt">
-                <img src="Miranha/20250314214958_1.jpg" alt="">
-                <img src="Miranha/20250316112521_1.jpg" alt="">
-                <img src="Miranha/20250316133541_1.jpg" alt="">
-                <img src="Miranha/20250318060808_1.jpg" alt="">
-                <img src="Miranha/20250318061933_1.jpg" alt="">
-                <img src="Miranha/20250318063627_1.jpg" alt="">
-                <img src="Miranha/20250318065732_1.jpg" alt="">
-                <img src="Miranha/20250318132951_1.jpg" alt="">
-                <img src="Miranha/20250322160942_1.jpg" alt="">
-                <img src="Miranha/20250323111330_1.jpg" alt="">
-                <img src="Miranha/20250324204516_1.jpg" alt="">
-                <img src="Miranha/20250329083540_1.jpg" alt="">
+        <section>
+            <div class="skills" id="skills">
+                <div>
+                    <h1>Habilidades</h1>
+                    <ol class="caixaskills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Git</li>
+                        <li>Banco de dados</li>
+                        <li>SEO</li>
+                    </ol>
+                </div>
             </div>
         </section>
     </main>
-    
-    <section class="joguinhos" id="joguinhos"> <!-- Essa section vai mostrar os jogos -->
-        <section class="caixaprincipal">
-            <div class="caixasecundaria">
-                <div class="analise">
-                    <img src="Aleatorio/cyberpunk.jpeg" alt="imagem do jogo cyberpunk">
-                </div>
-                <div class="oculto" id="cyberpunk">
-                    <img src="Aleatorio/cyberpunktime.png" alt="">
-                    <p>Cyberpunk</p>
-                </div>
-                
-            </div>
-            <div class="caixasecundaria">
-                <div class="analise">
-                    <img src="Aleatorio/20250309175735_1.jpg" alt="">
-                </div>
-                <div class="oculto">
-                    <p>Metal Gear revangence</p>
-                </div>
-            </div>
-            
-
-
-        </section>
-
-    </section> <!-- até aqui vai mostrar os joguinhos -->
-
-    <footer>
-        <h3>Site pra testar algumas coisas do HTML+CSS</h3>
-        <h3>Tente clicar em alguma capa pra abrir as capturas de tela</h3>
-        <h3>ou<br> Passe o mouse na imagem abaixo</h3>
-        <img onmouseout="sumir()" onmouseover="aparecer()" src="animes/setimoprincipe.jpg" name="prince" alt="">
-        <section class="oculto" id="oculto">
-            <p><b>Tensei shitara Dainana Ouji Datta node, Kimama ni Majutsu wo Kiwamemasu</b></p><br>
-            <label>Esse anime é estranho e satifátorio de assistir ao mesmo tempo.<br>
-                animação muito bonitinha e com uma historia que te prende no enredo <br>
-                aparentemente é um isekai que faz uma satira com os isekai genericos <br>
-                achei a luta final da segunda temporada muito chata, nunca vi tanta enrolação <br>
-                o ecchi estraga bastante o anime no começo mas depois fica suportável
-            </label>
-        </section>
-        <h3>Em <strong><a href="AboutMe.html">About me </a></strong>tem algumas coisas aleatorias em javascript</h3>
-    </footer>
-
-
-
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
