@@ -9,10 +9,30 @@
 header h2{
     cursor: pointer;
 }
-body{
+.back{
     width: 100%;
     background-color: #1E2235;
     color:  #FFFFFF;
+    transition: background-color 1.5s, color 1s;
+}
+.back.claro{
+    color: black;
+    background-color: #ffffff;
+}
+.back.claro a{
+    color: black;
+}
+.back.claro .nome{
+    color: rgb(95, 78, 78);
+}
+.back.claro .menubar img{
+    filter: brightness(0);
+}
+.back.claro .skills h1{
+    color: black;
+}
+.back.claro .skills{
+    color: white;
 }
 header{
     max-width: 100%;
@@ -156,5 +176,5 @@ main{
 }
 .contato div img:hover{
     cursor: pointer;
-    transform: scale(1.09);
+    transform: scale(1.1);
 }
