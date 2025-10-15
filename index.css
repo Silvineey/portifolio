@@ -179,3 +179,39 @@ main{
     cursor: pointer;
     transform: scale(1.1);
 }
+#oculto{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    body{
+        width: 100%;
+    }
+    header{
+        max-width: 100%;
+    }
+    .principal h1{
+        font-size: 35px;
+    }
+    .principal h2{
+        font-size: 19px;
+    }
+    .principal p{
+        font-size: 19px;
+    }
+    .projetos{
+        flex-wrap: wrap;
+    }
+    main{
+        max-width: 100%;
+    }
+    .caixa{
+        max-width: 350px;
+        width: 320px;
+        flex-shrink: 1;
+    }
+    .caixaskills{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
