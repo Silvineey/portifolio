@@ -98,6 +98,9 @@ main{
 }
 
 .caixa{
+    flex-shrink: 1;
+    max-width: 50%;
+    flex-wrap: wrap;
     box-shadow: 2px 1px 2px #515fa5;
     background-color: rgba(47, 54, 88, 0.604);
     border-radius: 25px;
