@@ -164,9 +164,10 @@ main{
     font-style: bold;
     cursor: pointer;
     transform: translateY(-5px) scale(1.1);
-    box-shadow: 1px 1px 1px #30375a;
+    box-shadow: 1px 1px 1px 1px #30375a;
 }
 .contato{
+    text-align: center;
     flex-wrap: wrap;
     padding-top: 5em;
     justify-content: center;
@@ -174,9 +175,8 @@ main{
 }
 .contato div img{
     margin: 1em 1em;
-    display: flex;
     flex-wrap: wrap;
-    width: 45px;
+    width: 25px;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .contato div img:hover{
