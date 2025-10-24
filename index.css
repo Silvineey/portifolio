@@ -69,13 +69,15 @@ main{
     max-width: 100%;
 }
 .principal{
+    flex-shrink: 2;
+    margin: 0 auto;
     width: 90%;
     max-width: 100%;
     padding-top: 5em;
     text-align: center;
 }
 .principal h1{
-    font-size: 50px;
+    font-size: 45px;
     padding-bottom: 1em;
 }
 .principal h2{
@@ -87,9 +89,19 @@ main{
     font-size:20px ;
 }
 .nome{
-    color: #f3edede3;
+    font-weight: bold;
+    background: linear-gradient(to right, orange, rgb(219, 113, 26), rgb(226, 76, 17));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
+#habilidades{
+    font-weight: bold;
+    background: linear-gradient(to right, orange, rgb(219, 113, 26), rgb(226, 76, 17));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .projetos{
     gap: 10px;
